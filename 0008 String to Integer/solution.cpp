@@ -1,4 +1,43 @@
-// 这个解法并非自己想到，这个解法确实对人有所启发，学到了学到了
+class Solution {
+public:
+    int myAtoi(string str) {
+
+        int firstNotBlank = 0;
+        int sign = 1;
+        long res = 0;
+
+        for(char c: str) {
+            if(firstNotBlank) {
+                if(c < '0' || c > '9') {
+                    return sign * res;
+                }
+                if((res > INT_MAX / 10 || res == INT_MAX / 10 && (c - '0') > 7) && sign == 1) {
+                        return INT_MAX;
+                }
+                if((res > (-INT_MIN) / 10 || res == (-INT_MIN) / 10 && (c - '0') > 8) && sign == -1){
+                        return INT_MIN;
+                }
+                res = res * 10 + (c - '0');
+            }
+            if(c != ' ' && !firstNotBlank) {
+                firstNotBlank = 1;
+                if(c == '-' || c == '+' || c >= '0' && c <= '9') {
+                    if(c == '-'){
+                        sign = -1;
+                    } else if(c != '+') {
+                        res += c - '0';
+                    }
+                } else {
+                    return 0;
+                }
+            } 
+        }
+        return sign * res;
+    }  
+};
+
+
+// 这个解法并非自己想到，但这个解法确实对人有所启发，学到了学到了
 class Solution {
 public:
     int myAtoi(string str) {
