@@ -7,3 +7,4 @@ I can't use Chinese in my environment.Be forced to practice English,haha.
 0003 Longest SubString Without Repeating Characters
 0004 Median of Two Sorted Arrays *
 0005 Longest Palindromic Substring *
+0006 Zigzag Conversion
