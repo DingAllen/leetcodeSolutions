@@ -10,3 +10,4 @@ I can't use Chinese in my environment.Be forced to practice English,haha.
 0006 Zigzag Conversion
 0007 Inverse Integer
 0008 String to Integer
+0009 Palindrome Number
