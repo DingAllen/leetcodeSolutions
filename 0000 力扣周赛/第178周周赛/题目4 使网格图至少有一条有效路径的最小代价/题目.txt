@@ -1,0 +1,32 @@
+// https://leetcode-cn.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/
+// 偷的榜二的代码
+class Solution {
+    const int dx[5]={0,0,0,1,-1},dy[5]={0,1,-1,0,0};
+    int d[105][105];
+    deque<pair<int,int>> q;
+public:
+    int minCost(vector<vector<int>>& grid) {
+        int n=grid.size(),m=grid[0].size(),i,j,k;
+        memset(d,127,sizeof(d));
+        d[0][0]=0;
+        q.clear();
+        q.push_back(make_pair(0,0));
+        while(!q.empty())
+        {
+            i=q.front().first;
+            j=q.front().second;
+            q.pop_front();
+            for(k=1;k<5;k++)if(i+dx[k]>=0&&i+dx[k]<n&&j+dy[k]>=0&&j+dy[k]<m)if(k==grid[i][j]&&d[i+dx[k]][j+dy[k]]>d[i][j])
+            {
+                d[i+dx[k]][j+dy[k]]=d[i][j];
+                q.push_front(make_pair(i+dx[k],j+dy[k]));
+            }
+            else if(k!=grid[i][j]&&d[i+dx[k]][j+dy[k]]>d[i][j]+1)
+            {
+                d[i+dx[k]][j+dy[k]]=d[i][j]+1;
+                q.push_back(make_pair(i+dx[k],j+dy[k]));
+            }
+        }
+        return d[n-1][m-1];
+    }
+};
