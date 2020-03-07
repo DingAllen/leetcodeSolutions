@@ -21,3 +21,4 @@ I can't use Chinese in my environment.Be forced to practice English,haha.
 0017 Letter Combinations of a Phone Number
 0018 4Sum
 0019 Remove Nth Node From End of List
+0020 Vaild Parentheses
