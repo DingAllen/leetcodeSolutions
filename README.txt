@@ -25,3 +25,4 @@ I can't use Chinese in my environment.Be forced to practice English,haha.
 0021 Merge Two Sorted Lists
 0022 Generate Parentheses
 0023 Merge k Sorted Lists
+0024 Swap Nodes in Pairs
