@@ -28,3 +28,4 @@
 ### 0024 Swap Nodes in Pairs
 ### 0025 Reverse Nodes in k Group
 ### 0026 Remove Duplicates from Sorted Array
+### 0027 Remove Element
