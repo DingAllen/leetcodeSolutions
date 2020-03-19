@@ -31,3 +31,4 @@
 #### 0029 Divide Two Integers
 #### 0030 Substring with Concatenation of All Words
 #### 0031 Next Permutation
+#### 0032 Longest Valid Parentheses
