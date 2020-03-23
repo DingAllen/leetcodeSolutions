@@ -34,3 +34,5 @@
 #### 0032 Longest Valid Parentheses
 #### 0033 Search in Rotated Sorted Array
 #### 0034 Find First and Last Position of Element in Sorted Array
+#### 0035 Search Insert Position
+#### 0036 Valid Sudoku
