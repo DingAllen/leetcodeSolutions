@@ -36,3 +36,4 @@
 #### 0034 Find First and Last Position of Element in Sorted Array
 #### 0035 Search Insert Position
 #### 0036 Valid Sudoku
+#### 0037 Sudoku Solver
