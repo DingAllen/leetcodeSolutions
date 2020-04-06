@@ -38,3 +38,15 @@
 #### 0036 Valid Sudoku
 #### 0037 Sudoku Solver
 #### 0038 Count and Say
+#### 0039 Combination Sum
+#### 0040 Combination Sum II
+#### 0041 First Missing Positive
+#### 0042 Trapping Rain Water
+#### 0043 Mmultiply Strings
+#### 0044 Wildcard Matching
+#### 0045 Jump Game II
+#### 0046 Permutations
+#### 0047 Permutations II
+#### 0048 Rotate Image
+#### 0049 Group Anagrams
+#### 0050 Pow(x, n)
